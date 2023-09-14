@@ -1,0 +1,667 @@
+/* Start Global Rules */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap");
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #8000ff;
+    --main-color-alt: #cf59e6;
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --background: #ececec;
+    --color-dark-mode: #11111b;
+    --form-control-color: rebeccapurple;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: var(--main-color);
+}
+
+::selection {
+    color: #fff;
+    background: var(--main-color);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--color-dark-mode);
+    cursor: none;
+    cursor: url('cursorr.png');
+    cursor: url('cursorr.png'),
+        url('cursorr.png');
+    cursor: url('cursorr.png'),
+        move;
+    cursor: url('cursorr.png')10 12;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+h2 {
+    color: var(--main-color);
+    letter-spacing: -2px;
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0 0 30px;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+select {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
+    width: 46%;
+    background-color: #e8eeef;
+    color: #3c3c3c;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+input[type=file]::-webkit-file-upload-button {
+    margin-right: 20px;
+    border: none;
+    background: #e8eeef;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #3c3c3c;
+    cursor: pointer;
+    -webkit-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #e8eeef;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #3c3c3c;
+    cursor: pointer;
+    -webkit-transition: background 0.2s ease-in-out;
+    transition: background 0.2s ease-in-out;
+}
+
+input[type=file]::-webkit-file-upload-button:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+
+#thank-you-message {
+    display: none;
+    margin: 50px auto;
+}
+
+#thank-you-message.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--background);
+    color: var(--main-color);
+    font-size: 24px;
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+    -webkit-transition: all 5s ease-in-out;
+    transition: all 5s ease-in-out;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .user-box,
+    select {
+        width: 96% !important;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+@-webkit-keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+@-webkit-keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+@-webkit-keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+@-webkit-keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.container .inner-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.container .inner-container .user-box {
+    position: relative;
+    width: 46%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.container .inner-container .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.container .inner-container .user-box input:focus~label {
+    top: -30px;
+    left: 0;
+    color: var(--main-color);
+    font-size: 14px;
+}
+
+.container .inner-container .user-box input:valid~label {
+    top: -30px;
+    left: 0;
+    color: var(--main-color);
+    font-size: 14px;
+}
+
+.container .inner-container .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.container .inner-container .user-box .date {
+    top: -24px;
+    left: 0;
+    font-size: 14px;
+}
+
+.container form a {
+    position: relative;
+    display: block;
+    padding: 5px 10px;
+    background-color: var(--background);
+    overflow: hidden;
+    margin-top: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.container form a input[type=submit] {
+    border: none;
+    color: var(--main-color);
+    letter-spacing: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    width: 100%;
+    height: 30px;
+}
+
+.container form a input[type=submit]:hover {
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.container form a:hover {
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.container form a span {
+    position: absolute;
+    display: block;
+}
+
+.container form a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), to(var(--main-color-alt)));
+    background: linear-gradient(90deg, transparent, var(--main-color-alt));
+    -webkit-animation: btn-anim1 1s linear infinite;
+    animation: btn-anim1 1s linear infinite;
+}
+
+.container form a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(var(--main-color-alt)));
+    background: linear-gradient(180deg, transparent, var(--main-color-alt));
+    -webkit-animation: btn-anim2 1s linear infinite;
+    animation: btn-anim2 1s linear infinite;
+    -webkit-animation-delay: 0.25s;
+    animation-delay: 0.25s;
+}
+
+.container form a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: -webkit-gradient(linear, right top, left top, from(transparent), to(var(--main-color-alt)));
+    background: linear-gradient(270deg, transparent, var(--main-color-alt));
+    -webkit-animation: btn-anim3 1s linear infinite;
+    animation: btn-anim3 1s linear infinite;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.container form a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(var(--main-color-alt)));
+    background: linear-gradient(360deg, transparent, var(--main-color-alt));
+    -webkit-animation: btn-anim4 1s linear infinite;
+    animation: btn-anim4 1s linear infinite;
+    -webkit-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+}
+
+.images-box .shadow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+}
+
+.images-box .close {
+    position: absolute;
+    top: 0;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: spin;
+    animation-name: spin;
+}
+
+.images-box .arrow {
+    position: absolute;
+    bottom: 5%;
+    left: -100px;
+    width: 300px;
+}
+
+.form-control {
+    font-family: system-ui, sans-serif;
+    font-size: 1em;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 2.5em;
+    color: #fff;
+}
+
+.form-control+.form-control {
+    margin-top: 1em;
+}
+
+.form-control:focus-within {
+    color: var(--form-control-color);
+}
+
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: var(--form-background);
+    /* Not removed via appearance */
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 40px;
+    height: 1.15em;
+    border: 5px solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    font-size: 2em;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="radio"]:focus {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+
+
+.letsTalkBtn {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    width: 180px;
+    height: 40px;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: all .3s;
+    cursor: url('click.png');
+    cursor: url('click.png'),
+        url('click.png');
+    cursor: url('click.png'),
+        move;
+    cursor: url('click.png')10 12;
+}
+
+.letsTalkBtn-text {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230, 230, 230, 0.466);
+    border: none;
+    border-radius: 7px;
+    backdrop-filter: blur(5px);
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+}
+
+.letsTalkBtn-BG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(150deg, #71cbff, #8000ff);
+    z-index: -1;
+    left: 6px;
+    top: 6px;
+    border-radius: 7px;
+    pointer-events: none;
+    transition: all .3s;
+}
+
+.letsTalkBtn:hover {
+    transform: translateY(-2px) translateX(-2px);
+}
+
+.letsTalkBtn:hover .letsTalkBtn-BG {
+    transform: translateY(2px) translateX(2px);
+}
+
+.letsTalkBtn:active {
+    transform: translateY(7px) translateX(7px);
+}
+
+.letsTalkBtn:active .letsTalkBtn-BG {
+    transform: translateY(-7px) translateX(-7px);
+}
+
+.form-btn {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0a10;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8000ff;
+    /* border-radius: 20px; */
+}
+
+
+
+
+
+
+
+.card {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card .primary-heading {
+    text-align: center;
+    color: var(--main-color);
+
+}
+
+.paragraph {
+    color: rgb(179, 179, 179);
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+
+
+.footer-heading {
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    line-height: 35px;
+}
+

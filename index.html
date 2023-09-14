@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- , user-scalable=no -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#000" />
+        <meta name="description" content="Elite Technology | Portfolio, Visit and know about me & my projects/designs. I value simple content structure, clean design patterns, and thoughtful interactions." />
+        <meta name="keywords" content="Elite Technology, Elite Technology portfolio,Elite Technology Portfolio, vinodjangid, Elite Technology github" />
+        <meta name="author" content="Elite Technology" />
+        <!-- 
+         <meta property="og:title" content="" >
+         <meta property="og:image" content="" >
+         <meta property="og:url" content="" >
+         <meta property="og:site_name" content="" >
+         <meta property="og:description" content="" >
+         <meta name="twitter:title" content="" >
+         <meta name="twitter:image" content="" >
+         <meta name="twitter:url" content="" >
+         <meta name="twitter:card" content="" > -->
+        <title>Eite 4 echnology</title>
+        <link rel="icon" type="image/x-icon" href="src/png/favicon.png" />
+        <!-- aos cdn -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="style.css" />
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+        <!-- google icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <body class="body">
+        <canvas></canvas>
+        <audio loop="" id="audioPlayer" autoplay="" style="display: none;">
+            <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+        </audio>
+        <div id="preloader"></div>
+        <noscript>Allow Javascript</noscript>
+        <header>
+            <div class="navbar" id="navbar">
+                <div class="hey">Elite</div>
+                <div class="logo" tabindex="0" aria-label="Elite Technology logo">
+                    <div class="logo-top">
+                        <img src="src/png/elite-logo.png" alt="" />
+                    </div>
+                </div>
+                <div class="navbar-tabs" id="navbar-tabs">
+                    <ul class="navbar-tabs-ul">
+                        <a href="#home" tabindex="0" aria-label="Home menu button">
+                            <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+                                &#60;/Home&#62;
+                            </li>
+                        </a>
+                        <a href="#about" aria-label="about menu button">
+                            <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+                                &#60;/About&#62;
+                            </li>
+                        </a>
+                        <a href="#services" aria-label="services menu button">
+                            <li class="services" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+                                &#60;/Services&#62;
+                            </li>
+                        </a>
+                        <a href="#features" aria-label="features menu button">
+                            <li class="features" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+                                &#60;/Features&#62;
+                            </li>
+                        </a>
+                        <a href="#projects" aria-label="projects menu button">
+                            <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+                                &#60;/Projects&#62;
+                            </li>
+                        </a>
+                        <a href="#blogs" aria-label="projects menu button">
+                            <li class="blogs" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+                                &#60;/Blogs&#62;
+                            </li>
+                        </a>
+                        <a href="#contactus" aria-label="projects menu button">
+                            <li class="contactus" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+                                &#60;/Contact Us&#62;
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <!-- navbar tabs ends -->
+            </div>
+        </header>
+        <!-- header ends here -->
+        <main>
+            <!-- hamburger -->
+            <div class="hamburger" id="hamburger" data-aos="fade">
+                <div class="hamburgerbase">
+                    <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+                        <span class="burger-bar" id="burger-bar1"></span>
+                        <span class="burger-bar" id="burger-bar2"></span>
+                        <span class="burger-bar" id="burger-bar3"></span>
+                    </button>
+                </div>
+            </div>
+            <!-- hamburger -->
+            <div class="mobiletogglemenu" id="mobiletogglemenu">
+                <div class="emptyarea" id="emptyarea"></div>
+                <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+                    <a href="#home" tabindex="0" aria-label="Home menu button">
+                        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+                            &#60;/Home&#62;
+                        </li>
+                    </a>
+                    <a href="#about" tabindex="0" aria-label="about menu button">
+                        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+                            &#60;/AboutMe&#62;
+                        </li>
+                    </a>
+                    <a href="#services" tabindex="0" aria-label="services menu button">
+                        <li id="services-mobile-tab" class="mobile-navbar-tabs-li services" onclick="hidemenubyli()">
+                            &#60;/Services&#62;
+                        </li>
+                    </a>
+                    <a href="#features" tabindex="0" aria-label="features menu button">
+                        <li id="features-mobile-tab" class="mobile-navbar-tabs-li features" onclick="hidemenubyli()">
+                            &#60;/Features&#62;
+                        </li>
+                    </a>
+                    <a href="#projects" tabindex="0" aria-label="projects menu button">
+                        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+                            &#60;/Projects&#62;
+                        </li>
+                    </a>
+                    <a href="#blogs" tabindex="0" aria-label="projects menu button">
+                        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li blogs" onclick="hidemenubyli()">
+                            &#60;/Blogs&#62;
+                        </li>
+                    </a>
+                    <a href="#contactus" tabindex="0" aria-label="projects menu button">
+                        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li contactus" onclick="hidemenubyli()">
+                            &#60;/Contact Us&#62;
+                        </li>
+                    </a>
+                </ul>
+            </div>
+            <!-- mobile toggle menu ends -->
+            <div class="fakenavbar"></div>
+            <section class="landing-page-container" id="home">
+                <div class="text-content">
+                    <article id="hello-friend" data-aos="fade-up" data-aos-delay="0">
+                        <p class="jello">N</p>
+                        <p class="jello">a</p>
+                        <p class="jello">m</p>
+                        <p class="jello">a</p>
+                        <p class="jello">s</p>
+                        <p class="jello">t</p>
+                        <p class="jello">e</p>
+                        <p class="jello">(</p>
+                        <p class="jello">)</p>
+                        <p class="jello">;</p>
+                        &nbsp;
+                        <p class="jello">E</p>
+                        <p class="jello">l</p>
+                        <p class="jello">i</p>
+                        <p class="jello">t</p>
+                        <p class="jello">e</p>
+                    </article>
+                    <article id="name" data-aos="fade-up" data-aos-delay="200">
+                        <p class="jello">F</p>
+                        <p class="jello">o</p>
+                        <p class="jello">r</p>
+                        &nbsp;
+                        <p class="jello">T</p>
+                        <p class="jello">e</p>
+                        <p class="jello">c</p>
+                        <p class="jello">h</p>
+                        <p class="jello">n</p>
+                        <p class="jello">o</p>
+                        <p class="jello">l</p>
+                        <p class="jello">o</p>
+                        <p class="jello">g</p>
+                        <p class="jello">y</p>
+                        <p class="jello">.</p>
+                    </article>
+                    <article id="work" data-aos="fade-up" data-aos-delay="400">
+                        <div>
+                            <p class="jello">The</p>
+                        </div>
+                        <div>
+                            <p class="jello">Best</p>
+                        </div>
+                        <div>
+                            <p class="jello">Choice</p>
+                        </div>
+                        <div>
+                            <p class="jello">For</p>
+                        </div>
+                        <div>
+                            <p class="jello">Your</p>
+                        </div>
+                        <div>
+                            <p class="jello">Project</p>
+                            <p class="jello">.</p>
+                        </div>
+                    </article>
+                    <p id="info-para" data-aos="fade-up" data-aos-delay="600">
+                        Sharp Focus On Service Quality & Client Satisfaction.
+                    </p>
+                    <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
+                        <a href="form.html" tabindex="-1">
+                            <button class="letsTalkBtn">
+                                <p class="letsTalkBtn-text">Become A Partner</p>
+                                <span class="letsTalkBtn-BG"></span>
+                            </button>
+                        </a>
+                        <div class="setting-container" id="setting-container">
+                            <input type="checkbox" id="switchforsetting" onclick="settingtoggle()" />
+                            <label for="switchforsetting" id="labelforsetting" tabindex="0" aria-label="settings for sound and appearance"></label>
+                            <div class="visualmodetogglebuttoncontainer" id="visualmodetogglebuttoncontainer">
+                                <input type="checkbox" id="switchforvisualmode" onclick="visualmode()" />
+                                <label for="switchforvisualmode" id="labelforvisualmode" tabindex="0" aria-label="switch appearance"></label>
+                            </div>
+                            <div class="soundtogglebuttoncontainer" id="soundtogglebuttoncontainer">
+                                <input type="checkbox" id="switchforsound" onclick="playpause()" />
+                                <label for="switchforsound" id="labelforsound" tabindex="0" aria-label="switch sound"></label>
+                            </div>
+                        </div>
+                        <!-- setting div ends -->
+                    </div>
+                    <!-- contact-btn-div -->
+                </div>
+                <!-- Resume button -->
+                <button class="resume-btn" id="resume-btn">
+                    <div class="sign">
+                        <svg viewBox="0 0 640 512">
+                            <path
+                                d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z"
+                            />
+                        </svg>
+                    </div>
+                    <div class="text">Resume</div>
+                </button>
+            </section>
+            <!-- landing page ends here -->
+            <section class="about-section-container" id="about" data-aos="fade-up">
+                <div class="about-section">
+                    <div class="about-heading">
+                        <article class="about-heading-article" tabindex="0" aria-label="About me heading">
+                            &#60;/About Us&#62;
+                        </article>
+                        <p class="aboutHeadingP"></p>
+                    </div>
+                    <div class="info-dp-section">
+                        <div class="about-info">
+                            <p tabindex="0">
+                                Elite Technology is a software development company established in 2022 that strive to bring you the best software solution to your problem. We listen to your needs and we turn your ideas into software exactly
+                                how you need it to be.
+                            </p>
+                            <br />
+                            <p tabindex="0">
+                                We recruit and keep the best of talent in the industry and respond to your ideas with enhancements, suggestions and even warning, wherever necessary.
+                            </p>
+                            <br />
+                            <p tabindex="0">
+                                We take care of all your programming needs for you-from mobile apps to web solution and ERP System, and you are then free to focus on your core business. We are here to help your business do better in the
+                                digital era. Begin your new future now with us.
+                            </p>
+                        </div>
+                        <div class="dp" data-aos="fade-up">
+                            <img src="src/svg/blog3.svg" alt="" tabindex="0" aria-label="image of vinod" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- about section ends  -->
+            <section class="services-section-container" id="services">
+                <div class="services-section">
+                    <div class="services-heading" data-aos="fade-up">
+                        <article class="services-heading-article" tabindex="0" aria-label="services heading">
+                            &#60;/Services&#62;
+                        </article>
+                        <p class="servicesHeadingP"></p>
+                    </div>
+                    <div class="dev-section">
+                        <div class="language-speak">
+                            <article tabindex="0" aria-label="languages i speak below">
+                                >_ Why Choose us ?
+                            </article>
+                        </div>
+                        <div class="dev-heading" data-aos="fade-up" tabindex="0" aria-label="">
+                            WE UNDERSTAND YOUR REQUIREMENT AND PROVIDE QUALITY WORKS.
+                        </div>
+                        <div class="languages-section">
+                            <div class="language-name" data-aos="fade-up" id="">
+                                <article tabindex="0" aria-label="">NFC Technology</article>
+                                <p>
+                                    Near-field communication (NFC) is a short-range wireless connectivity technology that uses magnetic field induction to enable communication between devices.
+                                </p>
+                            </div>
+                            <div class="language-name" data-aos="fade-up" id="">
+                                <article tabindex="0" aria-label="">Developing</article>
+                                <p>
+                                    we have the best software engineers including all sections.
+                                </p>
+                            </div>
+                            <div class="language-name" data-aos="fade-up" id="">
+                                <article tabindex="0" aria-label="">Digital Marketing</article>
+                                <p>
+                                    We have marketers at the highest level to reach your goals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- services section ends -->
+            <section class="services-section-container" id="features">
+                <div class="services-section">
+                    <div class="services-heading" data-aos="fade-up">
+                        <article class="services-heading-article" tabindex="0" aria-label="services heading">
+                            &#60;/FEATURES&#62;
+                        </article>
+                        <p class="servicesHeadingP"></p>
+                    </div>
+                    <div class="dev-section">
+                        <div class="language-speak">
+                            <article tabindex="0" aria-label="languages i speak below">
+                                >_ HIGHLIGHTED FEATURES!
+                            </article>
+                        </div>
+                        <div class="dev-heading" data-aos="fade-up" tabindex="0" aria-label="">
+                            make your work easier and faster!
+                        </div>
+                        <div class="languages-section">
+                            <div class="language-name" data-aos="fade-up" id="">
+                                <div class="div-img">
+                                    <img src="src/png/responsive.png" style="width: 100px;" alt="" />
+                                </div>
+                                <article tabindex="0" aria-label="">IT Consultancy</article>
+                                <p>
+                                    If you need help identifying the technology barriers that stand between you and a more profitable business, our software consultants can help.
+                                </p>
+                            </div>
+                            <div class="language-name" data-aos="fade-up" id="">
+                                <div class="div-img">
+                                    <img src="src/png/graphic-design.png" style="width: 100px;" alt="" />
+                                </div>
+                                <article tabindex="0" aria-label="">Front-end Development</article>
+                                <p>
+                                    Beautiful graphic design. Stunning web pages. Because people ignore design that ignores people.
+                                </p>
+                            </div>
+                            <div class="language-name" data-aos="fade-up" id="">
+                                <div class="div-img">
+                                    <img src="src/png/backend.png" style="width: 100px;" alt="" />
+                                </div>
+                                <article tabindex="0" aria-label="">Backend Development</article>
+                                <p>
+                                    A dedicated team of developers to thrive on complex, end‑to‑end backend challenges.
+                                </p>
+                            </div>
+                            <div class="language-name" data-aos="fade-up" id="">
+                                <div class="div-img">
+                                    <img src="src/png/ux.png" style="width: 100px;" alt="" />
+                                </div>
+                                <article tabindex="0" aria-label="">UI/Ux Design</article>
+                                <p>
+                                    An integrated service that begins with studying the activity of your company and then setting the appropriate visual identity with the use of significant colors and in line with your activity to produce
+                                    an integrated identity, on top of which is a distinct, special and unique logo that expresses the company’s vision and philosophy.
+                                </p>
+                            </div>
+                            <div class="language-name" data-aos="fade-up" id="">
+                                <div class="div-img">
+                                    <img src="src/png/development.png" style="width: 100px;" alt="" />
+                                </div>
+                                <article tabindex="0" aria-label="">Mobile App Development</article>
+                                <p>
+                                    We develop mobile solutions that will meet your business needs and goals. Our experience covers the development of native, cross-platform and hybrid mobile apps.
+                                </p>
+                            </div>
+                            <div class="language-name" data-aos="fade-up" id="">
+                                <div class="div-img">
+                                    <img src="src/png/qa.png" style="width: 100px;" alt="" />
+                                </div>
+                                <article tabindex="0" aria-label="">QA and Testing</article>
+                                <p>
+                                    Software quality assurance is paramount. It represents the key to unlocking a better return on investment and to establishing a strong, positive relationship with your customer base. We offer a wide range
+                                    of software testing services to help you achieve it.
+                                </p>
+                            </div>
+                            <div class="language-name" data-aos="fade-up" id="">
+                                <div class="div-img">
+                                    <img src="src/png/robot.png" style="width: 100px;" alt="" />
+                                </div>
+                                <article tabindex="0" aria-label="">Steam Education System</article>
+                                <p>
+                                    STEAM is an educational approach to learning that uses Science, Technology, Engineering, the Arts and Mathematic.
+                                </p>
+                            </div>
+                            <div class="language-name" data-aos="fade-up" id="">
+                                <div class="div-img">
+                                    <img src="src/png/e-commerce.png" style="width: 100px;" alt="" />
+                                </div>
+                                <article tabindex="0" aria-label="">E-Commerce Development</article>
+                                <p>
+                                    We have a limited Offer on E-Commerce package Native ( website & Mobile application IOS & Android ).
+                                </p>
+                            </div>
+                            <div class="language-name" data-aos="fade-up" id="">
+                                <div class="div-img">
+                                    <img src="src/png/erp.png" style="width: 100px;" alt="" />
+                                </div>
+                                <article tabindex="0" aria-label="">ERP System</article>
+                                <p>
+                                    ERP is a software system that helps you run your entire business, including processes in finance, human resources, manufacturing, supply chain, services, ...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FEATURES section ends -->
+            <!--
+            - testimonials
+            -->
+            <section class="testimonials services-section-container">
+                <div class="services-section">
+                    <div class="services-heading" data-aos="fade-up">
+                        <article class="services-heading-article" tabindex="0" aria-label="services heading">
+                            &#60;/Testimonials&#62;
+                        </article>
+                        <p class="servicesHeadingP"></p>
+                    </div>
+                    <div class="dev-section">
+                        <div class="language-speak">
+                            <article tabindex="0" aria-label="languages i speak below">
+                                >_ WHAT CLIENTS SAY
+                            </article>
+                        </div>
+                    </div>
+
+                    <ul class="testimonials-list has-scrollbar">
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="src/png/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar />
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                        ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="src/png/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar />
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                        ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="src/png/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar />
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                        ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+                                <figure class="testimonials-avatar-box">
+                                    <img src="src/png/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar />
+                                </figure>
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <p>
+                                        Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet,
+                                        ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--
+            - testimonials modal
+            -->
+            <div class="modal-container" data-modal-container>
+                <div class="overlay" data-overlay></div>
+                <section class="testimonials-modal">
+                    <button class="modal-close-btn" data-modal-close-btn>
+                        <ion-icon name="close-outline">x</ion-icon>
+                    </button>
+                    <div class="modal-img-wrapper">
+                        <figure class="modal-avatar-box">
+                            <img src="src/png/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
+                        </figure>
+                        <img src="src/svg/icon-quote.svg" alt="quote icon" />
+                    </div>
+                    <div class="modal-content">
+                        <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+                        <time datetime="2021-06-14">14 June, 2021</time>
+                        <div data-modal-text>
+                            <p>
+                                Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous
+                                cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!--
+        - #projects
+      -->
+
+            <section class="projects-section-container" id="projects">
+                <div class="projects-section-div">
+                    <div class="projects-heading">
+                        <article class="projects-heading-article" tabindex="0" aria-label="My projects starts from here">
+                            &#60;/Projects&#62;
+                        </article>
+                        <p class="projectsHeadingP"></p>
+                    </div>
+                    <div class="dev-section">
+                        <div class="language-speak">
+                            <article tabindex="0" aria-label="languages i speak below">
+                                >_ Our awesome Previous work
+                            </article>
+                        </div>
+                        <div class="dev-heading" data-aos="fade-up" tabindex="0" aria-label="">
+                            ONLY BEST STORIES. DIVE IN!
+                        </div>
+                    </div>
+                    <div class="project-boxes-div">
+                        <div class="project-box project-box1" id="project-box1">
+                            <div class="info-div">
+                                <img src="src/webp/axocean-favicon.webp" alt="" class="faviconforProject" />
+                                <article class="ProjectHeading">AXOCEAN</article>
+                                <p class="ProjectDescription">
+                                    E-commerce website frontend work to choose people their favorite design of product and redirect to flipkart shopping site.
+                                </p>
+                                <a href="">
+                                    <button class="cta">
+                                        <span>See the Project</span>
+                                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                            <path d="M1,5 L11,5"></path>
+                                            <polyline points="8 1 12 5 8 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button class="cta">
+                                        <span>See the Live Site</span>
+                                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                            <path d="M1,5 L11,5"></path>
+                                            <polyline points="8 1 12 5 8 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="image-div">
+                                <img src="src/webp/AXOCEAN-project.webp" alt="" />
+                            </div>
+                        </div>
+                        <!-- ---------------------- -->
+
+                        <div class="project-box project-box2" id="project-box2">
+                            <div class="info-div">
+                                <img src="src/svg/aquaregia-favicon.svg" alt="" class="faviconforProjectAquaregia" />
+                                <article class="ProjectHeading">Aquaregia</article>
+                                <p class="ProjectDescription">
+                                    A website for University Maharaja College fest "Aquaregia" for event registerations.
+                                </p>
+                                <a href="">
+                                    <button class="cta">
+                                        <span>See the Project</span>
+                                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                            <path d="M1,5 L11,5"></path>
+                                            <polyline points="8 1 12 5 8 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button class="cta">
+                                        <span>See the Live Site</span>
+                                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                            <path d="M1,5 L11,5"></path>
+                                            <polyline points="8 1 12 5 8 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="image-div">
+                                <img src="src/webp/Aquaregia-project.webp" alt="" />
+                            </div>
+                        </div>
+                        <!-- ---------------------- -->
+
+                        <div class="project-box project-box3" id="project-box3">
+                            <div class="info-div">
+                                <img src="src/ico/netflixfavicon.ico" alt="" class="faviconforProject" />
+                                <article class="ProjectHeading">React Netflix Clone</article>
+                                <p class="ProjectDescription">
+                                    A webpage to categorize the shows to redirect user to watch the show.
+                                </p>
+                                <a href="">
+                                    <button class="cta">
+                                        <span>See the Project</span>
+                                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                            <path d="M1,5 L11,5"></path>
+                                            <polyline points="8 1 12 5 8 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button class="cta">
+                                        <span>See the Live Site</span>
+                                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                            <path d="M1,5 L11,5"></path>
+                                            <polyline points="8 1 12 5 8 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="image-div">
+                                <img src="src/webp/NetflixCloneProject.webp" alt="" />
+                            </div>
+                        </div>
+                        <!-- ---------------------- -->
+
+                        <div class="project-box project-box4" id="project-box4">
+                            <div class="info-div">
+                                <img src="src/png/qrcodefavicon.png" alt="" class="faviconforProjectAquaregia" />
+                                <article class="ProjectHeading">QR Generator</article>
+                                <p class="ProjectDescription">
+                                    A webpage to make a QR Code from text using API.
+                                </p>
+                                <a href="">
+                                    <button class="cta">
+                                        <span>See the Project</span>
+                                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                            <path d="M1,5 L11,5"></path>
+                                            <polyline points="8 1 12 5 8 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button class="cta">
+                                        <span>See the Live Site</span>
+                                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                            <path d="M1,5 L11,5"></path>
+                                            <polyline points="8 1 12 5 8 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="image-div">
+                                <img src="src/webp/QRgeneratorProject.webp" alt="" />
+                            </div>
+                        </div>
+
+                        <!-- ---------------------- -->
+                        <div class="project-box project-box5" id="project-box5">
+                            <div class="info-div">
+                                <img src="src/ico/foodmenufavicon.ico" alt="" class="faviconforProjectAquaregia" />
+                                <article class="ProjectHeading">
+                                    Bhukkad A Food Company
+                                </article>
+                                <p class="ProjectDescription">
+                                    React based UI of a fast food company webpage.
+                                </p>
+                                <a href="">
+                                    <button class="cta">
+                                        <span>See the Project</span>
+                                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                            <path d="M1,5 L11,5"></path>
+                                            <polyline points="8 1 12 5 8 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </a>
+                                <a href="">
+                                    <button class="cta">
+                                        <span>See the Live Site</span>
+                                        <svg viewBox="0 0 13 10" height="10px" width="15px">
+                                            <path d="M1,5 L11,5"></path>
+                                            <polyline points="8 1 12 5 8 9"></polyline>
+                                        </svg>
+                                    </button>
+                                </a>
+                            </div>
+                            <div class="image-div">
+                                <img src="src/webp/FoodMenuProject.webp" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--
+            - #BLOG
+            -->
+            <section class="blog-posts services-section-container">
+                <div class="services-section">
+                    <div class="services-heading" data-aos="fade-up">
+                        <article class="services-heading-article" tabindex="0" aria-label="services heading">
+                            &#60;/Blogs&#62;
+                        </article>
+                        <p class="servicesHeadingP"></p>
+                    </div>
+                    <div class="dev-section">
+                        <div class="language-speak">
+                            <article tabindex="0" aria-label="languages i speak below">
+                                >_ WELCOME IN OUR BLOGS
+                            </article>
+                        </div>
+                    </div>
+                    <ul class="blog-posts-list">
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="src/png/blog-1.jpg" alt="Design conferences in 2022" loading="lazy" />
+                                </figure>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2022-02-23">Fab 23, 2022</time>
+                                    </div>
+                                    <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                                    <p class="blog-text">
+                                        Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="src/png/blog-2.jpg" alt="Best fonts every designer" loading="lazy" />
+                                </figure>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2022-02-23">Fab 23, 2022</time>
+                                    </div>
+                                    <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                                    <p class="blog-text">
+                                        Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="src/png/blog-3.jpg" alt="Design digest #80" loading="lazy" />
+                                </figure>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2022-02-23">Fab 23, 2022</time>
+                                    </div>
+                                    <h3 class="h3 blog-item-title">Design digest #80</h3>
+                                    <p class="blog-text">
+                                        Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="src/png/blog-4.jpg" alt="UI interactions of the week" loading="lazy" />
+                                </figure>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2022-02-23">Fab 23, 2022</time>
+                                    </div>
+                                    <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+                                    <p class="blog-text">
+                                        Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="src/png/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy" />
+                                </figure>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2022-02-23">Fab 23, 2022</time>
+                                    </div>
+                                    <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+                                    <p class="blog-text">
+                                        Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="blog-post-item">
+                            <a href="#">
+                                <figure class="blog-banner-box">
+                                    <img src="src/png/blog-6.jpg" alt="Design digest #79" loading="lazy" />
+                                </figure>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Design</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2022-02-23">Fab 23, 2022</time>
+                                    </div>
+                                    <h3 class="h3 blog-item-title">Design digest #79</h3>
+                                    <p class="blog-text">
+                                        Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!--
+            - score
+            -->
+            <section id="score" class="clients services-section-container">
+                <div class="services-section">
+                    <div class="services-heading" data-aos="fade-up">
+                        <article class="services-heading-article" tabindex="0" aria-label="services heading">
+                            &#60;/OUR PROJECTS SCORE&#62;
+                        </article>
+                        <p class="servicesHeadingP"></p>
+                    </div>
+                    
+                      <div class="counter-container">
+                          <div class="counters">
+                            <img src="src/png/review.png" alt="">
+                            <div class="per">
+                              <h2 class="num" data-goal="97">0</h2>
+                              <h2 class="sign">%</h2>
+                            </div>
+                            <p class="count-text">POSITIVE REVIEWS</p>
+                          </div>
+
+                          <div class="counters">
+                            <img src="src/png/problem-solving.png" alt="">
+                            <div class="per">
+                              <h2 class="num" data-goal="36">0</h2>
+                              <h2 class="sign">+</h2>
+                            </div>
+                            <p class="count-text">SUPPORT ISSUES SOLVED</p>
+                          </div>
+
+                          <div class="counters">
+                            <img src="src/png/customer.png" alt="">
+                            <div class="per">
+                              <h2 class="num" data-goal="150">0</h2>
+                              <h2 class="sign">+</h2>
+                            </div>
+                            <p class="count-text">HAPPY CLIENTS</p>
+                          </div>
+                      </div>
+
+                </div>
+            </section>
+
+            <!--
+            - clients
+            -->
+            <section class="clients services-section-container">
+                <div class="services-section">
+                    <div class="services-heading" data-aos="fade-up">
+                        <article class="services-heading-article" tabindex="0" aria-label="services heading">
+                            &#60;/Clients&#62;
+                        </article>
+                        <p class="servicesHeadingP"></p>
+                    </div>
+                    <div class="dev-section">
+                        <div class="language-speak">
+                            <article tabindex="0" aria-label="languages i speak below">
+                                >_ We Worked with
+                            </article>
+                        </div>
+                    </div>
+                    <ul class="clients-list has-scrollbar">
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="src/png/logo-1-color.png" alt="client logo" />
+                            </a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="src/png/logo-2-color.png" alt="client logo" />
+                            </a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="src/png/logo-3-color.png" alt="client logo" />
+                            </a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="src/png/logo-4-color.png" alt="client logo" />
+                            </a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="src/png/logo-5-color.png" alt="client logo" />
+                            </a>
+                        </li>
+                        <li class="clients-item">
+                            <a href="#">
+                                <img src="src/png/logo-6-color.png" alt="client logo" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--
+            - #CONTACT
+            -->
+            <section class="services-section-container" data-mapbox id="contactus">
+                <div class="services-section">
+                    <div class="services-heading" data-aos="fade-up">
+                        <article class="services-heading-article" tabindex="0" aria-label="services heading">
+                            &#60;/Contact US&#62;
+                        </article>
+                        <p class="servicesHeadingP"></p>
+                    </div>
+                    <div class="dev-section">
+                        <div class="language-speak">
+                            <article tabindex="0" aria-label="languages i speak below">
+                                >_ Get In Touch
+                            </article>
+                        </div>
+                    </div>
+                    <section class="mapbox" data-mapbox>
+                        <figure>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+                                width="400"
+                                height="300"
+                                loading="lazy"
+                            ></iframe>
+                        </figure>
+                    </section>
+                    <section class="contact-form">
+                        <form action="#" class="form" data-form>
+                            <div class="input-wrapper">
+                                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
+                                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input />
+                            </div>
+                            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+                            <button class="letsTalkBtn form-btn" type="submit">
+                                <p class="letsTalkBtn-text">Send Message</p>
+                                <span class="letsTalkBtn-BG"></span>
+                            </button>
+                        </form>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <!-- main ends here -->
+        <footer>
+            <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+                <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+            </button>
+            <div class="footercontainer">
+                <div class="two-words">
+                    <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">
+                        "Learning, Living, and Leveling Up."
+                    </article>
+                </div>
+                <div class="social-media-container">
+                    <div class="getintouch-heading">
+                        <article>GetinTouch();</article>
+                    </div>
+                    <div class="logos">
+                        <a href="" target="_blank" tabindex="0" aria-label="My instagram">
+                            <svg viewBox="0 0 448 512" class="SocialHandle">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                                />
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" aria-label="My Linkdin">
+                            <svg class="SocialHandle" viewBox="0 0 448 512">
+                                <path
+                                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+                                />
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" aria-label="My github">
+                            <svg viewBox="0 0 496 512" class="SocialHandle">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                                />
+                            </svg>
+                        </a>
+                        <a href="mailto:@gmail.com" target="_blank" aria-label="My G mail">
+                            <svg id="GmailLogo" viewBox="0 0 512 512">
+                                <path
+                                    d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <article>
+                        Design & Built by Anas Rabea
+                        <i class="far fa-copyright"></i> Elite Technology , All Right Reserved
+                    </article>
+                </div>
+            </div>
+        </footer>
+        <!-- footer ends here -->
+    </body>
+    <script src="main.js"></script>
+    <!-- for aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script>
+        document.getElementById("resume-btn").addEventListener("click", function () {
+            var fileUrl = "src/pdf/Elite Technology Resume.pdf";
+            saveAs(fileUrl, "Resume.pdf");
+        });
+    </script>
+</html>
